@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>LeadTheRoad, Inc.</a>
+    
+    <nav class="navbar">
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="index.html">home</a>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="index.html">about</a>
+        <a data-aos="zoom-in-left" data-aos-delay="600" href="index.html">destination</a>
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="index.html">services</a>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="index.html">gallery</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1150" href="index.html">blogs</a>
+    </nav>
+
+    <a data-aos="zoom-in-left" data-aos-delay="1300" href="index.html" class="btn">book now</a>
+    <a data-aos="zoom-in-left" data-aos-delay="1300" href="register.html" class="btn">Register</a>
+
+</header>
+
+<div class="wrapper"  data-aos="fade-left" data-aos-delay="150">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+      <!-- <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input">
+       </div>  
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" class="input">
+       </div>  
+      <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" class="input">
+       </div> -->
+       <div  data-aos="fade-left" data-aos-delay="300" class="inputBox">
+        <input type="text" required="required">
+        <span>First Name</span>
+        <i></i>
+      </div>  
+      <div  data-aos="fade-left" data-aos-delay="450" class="inputBox">
+        <input type="text" required="required">
+        <span>Last Name</span>
+        <i></i>
+      </div> 
+      <div  data-aos="fade-left" data-aos-delay="600" class="inputBox">
+        <input type="password" required="required">
+        <span>Password</span>
+        <i></i>
+      </div>  
+      <div  data-aos="fade-left" data-aos-delay="750" class="inputBox">
+        <input type="password" required="required">
+        <span>Confirm Password</span>
+        <i></i>
+      </div> 
+      <div  data-aos="fade-left" data-aos-delay="900" class="inputBox">
+        <input type="email" required="required">
+        <span>Email Address</span>
+        <i></i>
+      </div> 
+      <div  data-aos="fade-left" data-aos-delay="450" class="inputBox">
+        <input type="tel" required="required">
+        <span>Phone Number</span>
+        <i></i>
+      </div> 
+      <div  data-aos="fade-left" data-aos-delay="600" class="inputBox">
+        <input type="text" required="required">
+        <span>Contact Address</span>
+        <i></i>
+      </div>
+      <div  data-aos="fade-left" data-aos-delay="750" class="inputBox">
+        <input type="text" required="required">
+        <span>postal Code</span>
+        <i></i>
+      </div>
+      <div  data-aos="fade-left" data-aos-delay="900" class="inputBox">
+        <input type="text" required="required">
+        <span>Gender</span>
+        <i></i>
+      </div>   
+      
+        <!-- <div class="gender">
+          <label>Gender</label>-->
+          
+          <!--   <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>-->
+          
+          <!--       <INPUT type="Radio" name="RB" required" onclick="check();">MALE</INPUT>
+
+          <INPUT type="Radio" name="RB" required" onclick="check();">FEMALE</INPUT>
+
+          <INPUT type="Radio" name="RB" required" onclick="check();">NONE</INPUT>
+       
+        </div> 
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea"></textarea>
+       </div> 
+      <div class="inputfield">
+          <label>Postal Code</label>
+          <input type="text" class="input">
+       </div> -->
+        <br>
+        <div class="inputfield terms">
+          <p>The Bidders who are interested in participating in 
+            the tender must read and comply with the instructions 
+            and the Terms & Conditions contained in the tender documents.</p>
+        </div>
+        <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+      <div class="inputfield">
+        <button type="submit" class="btn" onclick="openPopup()">Register</button>
+        <div class="popup" id="popup">
+          <img src="images/download2.jpg">
+          <h2>Thank You!</h2>
+          <p>Your details has been successfully submitted. Thanks!</p>
+          <a href="index.html"> <button type="button" onclick="closePopup()">OK</button></a>
+          
+        </div>
+      </div>
+    </div>
+</div>	
+	
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+
+function closePopup(){
+  popup.classList.remove("open-popup");
+}
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+
+    AOS.init({
+        duration: 800,
+        offset:150,
+    });
+
+</script>
+</body>
+</html>
